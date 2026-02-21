@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>恐龙睡前故事集</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Comic Sans MS', 'Microsoft YaHei', cursive, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            color: white;
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+        }
+        .subtitle {
+            text-align: center;
+            color: rgba(255,255,255,0.9);
+            font-size: 20px;
+            margin-bottom: 50px;
+        }
+        .stories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        .story-card {
+            background: white;
+            border-radius: 30px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            text-decoration: none;
+            display: block;
+        }
+        .story-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 60px rgba(0,0,0,0.3);
+        }
+        .story-emoji {
+            font-size: 80px;
+            margin-bottom: 20px;
+        }
+        .story-card h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .story-card p {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        .story-tag {
+            display: inline-block;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            color: white;
+        }
+        .tag-tyrannosaurus {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .tag-brachiosaurus {
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+        }
+        .tag-triceratops {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+        .tag-oviraptor {
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+        }
+        .footer {
+            text-align: center;
+            color: rgba(255,255,255,0.8);
+            font-size: 16px;
+            padding: 20px;
+        }
+        .footer span {
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🦖 恐龙睡前故事集 🦕</h1>
+        <p class="subtitle">适合3-6岁小朋友的温馨睡前故事</p>
+
+        <div class="stories-grid">
+            <a href="tyrannosaurus.html" class="story-card">
+                <div class="story-emoji">🦖</div>
+                <h2>霸王龙的大拥抱</h2>
+                <p>关于温柔和友谊的故事</p>
+                <span class="story-tag tag-tyrannosaurus">温柔</span>
+            </a>
+
+            <a href="brachiosaurus.html" class="story-card">
+                <div class="story-emoji">🦕</div>
+                <h2>腕龙的长脖子</h2>
+                <p>关于帮助别人的故事</p>
+                <span class="story-tag tag-brachiosaurus">助人</span>
+            </a>
+
+            <a href="triceratops.html" class="story-card">
+                <div class="story-emoji">🦏</div>
+                <h2>三角龙的勇敢角</h2>
+                <p>关于勇气的故事</p>
+                <span class="story-tag tag-triceratops">勇敢</span>
+            </a>
+
+            <a href="oviraptor.html" class="story-card">
+                <div class="story-emoji">🥚</div>
+                <h2>窃蛋龙的好朋友</h2>
+                <p>关于爱心和照顾的故事</p>
+                <span class="story-tag tag-oviraptor">爱心</span>
+            </a>
+        </div>
+
+        <div class="footer">
+            <span>🌙</span> 晚安，小朋友们！做个好梦！ <span>💤</span>
+        </div>
+    </div>
+</body>
+</html>

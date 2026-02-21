@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三角龙的勇敢角 - 恐龙睡前故事</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Comic Sans MS', 'Microsoft YaHei', cursive, sans-serif;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            border-radius: 30px;
+            padding: 40px;
+            max-width: 600px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+        .dinosaur-emoji {
+            font-size: 120px;
+            margin-bottom: 20px;
+            animation: shake 2s infinite;
+        }
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            75% { transform: translateX(5px); }
+        }
+        h1 {
+            color: #f5576c;
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        .subtitle {
+            color: #666;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        .audio-player {
+            margin: 30px 0;
+        }
+        audio {
+            width: 100%;
+            height: 60px;
+            border-radius: 30px;
+        }
+        .story-info {
+            background: #f8f9fa;
+            border-radius: 20px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+        .story-info h3 {
+            color: #f5576c;
+            margin-bottom: 10px;
+        }
+        .story-info p {
+            color: #666;
+            line-height: 1.8;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: transform 0.3s;
+        }
+        .back-link:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="dinosaur-emoji">🦏</div>
+        <h1>三角龙的勇敢角</h1>
+        <p class="subtitle">关于勇气的故事</p>
+
+        <div class="audio-player">
+            <audio controls>
+                <source src="三角龙的故事_女声.mp3" type="audio/mpeg">
+                您的浏览器不支持音频播放
+            </audio>
+        </div>
+
+        <div class="story-info">
+            <h3>📖 故事简介</h3>
+            <p>小三角龙头上长着三个角，看起来很威风，但他其实有点胆小。有一天，他鼓起勇气救了掉进河里的小鸭子。通过这个故事，小朋友可以学到：勇敢不是不害怕，而是害怕的时候，还是愿意去做正确的事情。</p>
+        </div>
+
+        <a href="index.html" class="back-link">← 返回故事列表</a>
+    </div>
+</body>
+</html>
