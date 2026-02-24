@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>翼龙的飞翔梦 - 恐龙睡前故事</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Comic Sans MS', 'Microsoft YaHei', cursive, sans-serif;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            border-radius: 30px;
+            padding: 40px;
+            max-width: 600px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+        .dinosaur-emoji {
+            font-size: 120px;
+            margin-bottom: 20px;
+            animation: fly 3s infinite ease-in-out;
+        }
+        @keyframes fly {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            25% { transform: translateY(-15px) rotate(-3deg); }
+            75% { transform: translateY(-15px) rotate(3deg); }
+        }
+        h1 {
+            color: #f5576c;
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        .subtitle {
+            color: #666;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        .audio-player {
+            margin: 30px 0;
+        }
+        audio {
+            width: 100%;
+            height: 60px;
+            border-radius: 30px;
+        }
+        .story-info {
+            background: #f8f9fa;
+            border-radius: 20px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+        .story-info h3 {
+            color: #f5576c;
+            margin-bottom: 10px;
+        }
+        .story-info p {
+            color: #666;
+            line-height: 1.8;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: transform 0.3s;
+        }
+        .back-link:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="dinosaur-emoji">🦅</div>
+        <h1>翼龙的飞翔梦</h1>
+        <p class="subtitle">关于梦想和坚持的故事</p>
+
+        <div class="audio-player">
+            <audio controls>
+                <source src="翼龙的故事_女声.mp3" type="audio/mpeg">
+                您的浏览器不支持音频播放
+            </audio>
+        </div>
+
+        <div class="story-info">
+            <h3>📖 故事简介</h3>
+            <p>小翼龙梦想着飞到最高的山顶看云彩。可是他的翅膀还不够强壮，好几次都摔倒了。但他没有放弃，每天都练习飞翔。终于有一天，他飞到了最高处，看到了最美的风景！通过这个故事，小朋友可以学到：坚持梦想就能成功。</p>
+        </div>
+
+        <a href="index.html" class="back-link">← 返回故事列表</a>
+    </div>
+</body>
+</html>
